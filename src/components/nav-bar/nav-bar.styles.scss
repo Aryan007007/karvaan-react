@@ -1,0 +1,41 @@
+:root {
+    --primary: #000000;
+    --nav1: #5f0201;
+    --secondary: #fff8dc;
+    --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
+    --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+
+    background: var(--nav1);
+    text-align: center;
+    font-family: samarkannormal;
+
+    padding: 1.5vh 2vh;
+    margin: 0;
+    box-shadow: var(--shadow-nav);
+    border-radius: 0 0 25px 25px;
+
+    .brick {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    img {
+        display: inline-block;
+        margin: 0;
+        width: 15vw;
+        position: absolute;
+        top: 0;
+        left: 42.5vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+}

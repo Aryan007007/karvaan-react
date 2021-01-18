@@ -6,6 +6,11 @@
   --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4); 
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 html{
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

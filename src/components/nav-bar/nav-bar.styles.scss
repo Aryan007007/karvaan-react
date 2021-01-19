@@ -69,14 +69,16 @@
         .brick{
             display: grid;
             grid-template-columns: 1fr;
+            font-size: 0.9em;
 
             .icon{
                 color: #fff8dc;
+                font-size: 0.9em;
                 display: block;
                 position: absolute;
-                top: 1.6vh;
+                top: 15px;
                 right: 20px; 
-                text-align: center;
+                align-self: center;;
             }
             
             .logo-2{
@@ -96,6 +98,7 @@
         }
         a{  
             &:not(:first-child){
+                align-self: center;;
                 display: none;
             }  
         }
@@ -103,7 +106,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .mainNav.responsive {position: fixed; width: 90%; height: 180px;}
+    .mainNav.responsive {position: fixed; width: 90%;}
     .mainNav.responsive a.icon {
       position: absolute;
       right: 20px;

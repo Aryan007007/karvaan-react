@@ -9,7 +9,6 @@ import Footer from '../../components/footer/footer.component';
 
 const HomePage = () => (
     <div>
-        <NavBar />
         <Header />
         <Social />
         <News />

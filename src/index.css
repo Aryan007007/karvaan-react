@@ -27,3 +27,11 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'samarkannormal';
+  src: url('./assets//font/samarkannormal-rxge-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}

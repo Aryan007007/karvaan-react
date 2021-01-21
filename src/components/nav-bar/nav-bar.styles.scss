@@ -106,15 +106,21 @@
 }
 
 @media screen and (max-width: 500px) {
-    .mainNav.responsive {position: fixed; width: 90%;}
-    .mainNav.responsive a.icon {
-      position: absolute;
-      right: 20px;
-      top: 1.6vh;
+    .mainNav.responsive {
+        position: fixed; 
+        width: 90%;
+
+        a.icon {
+            position: absolute;
+            right: 20px;
+            top: 1.6vh;
+        }
+
+        a {
+            float: none;
+            display: block;
+            text-align: center;
+        }  
+
     }
-    .mainNav.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-  }
+}

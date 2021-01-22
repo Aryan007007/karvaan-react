@@ -23,10 +23,11 @@ class NavBar extends React.Component {
         }
     }
 
+
     render() {
 
         return (
-            <div className="mainNav" id='myNav'>
+            <div className={`mainNav ${this.props.accent}`} id='myNav'>
                 <div className="brick">
                     <Link to='/'>Home</Link>
                     <Link to='/about-us'>About Us </Link>

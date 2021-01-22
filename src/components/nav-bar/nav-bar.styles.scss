@@ -1,11 +1,10 @@
-:root {
-    --primary: #000000;
-    --nav1: #5f0201;
-    --secondary: #fff8dc;
-    --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
-    --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
+// :root {
+//     --primary: #000000;
+//     --nav1: #5f0201;
+//     --secondary: #fff8dc;
+//     --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
+//     --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4);
+// }
 
 .mainNav {
     position: fixed;
@@ -14,7 +13,7 @@
     background: var(--nav1);
     text-align: center;
     font-family: samarkannormal;
-    font-size: 2em;
+    font-size: 1.8em;
 
     padding: 1.5vh 2vh;
     margin: 0;
@@ -56,6 +55,11 @@
             display: none;
         }
     }   
+}
+
+.blue{
+    background-color: var(--navBlue);
+    border-radius: 0 0 20% 20%;
 }
 
 @media screen and (max-width: 500px){

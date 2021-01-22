@@ -1,0 +1,25 @@
+.wrapper{
+    background-color: #e1f9ff;
+    margin: 7vh 10px 10px 10px;
+    padding: 1px;
+    border-radius: 5px;
+  }
+
+.about-section {
+    margin-top: 15vh;
+    color: #8B6426;
+    text-align: center;
+    font-size: 1.2rem;
+
+    p{
+        margin-top: 1rem; 
+        padding: 0; 
+        text-transform: capitalize;
+    }
+  }
+
+#border-image{
+  border: 24px solid transparent;
+  padding: 80px 120px;
+  border-image: url('https://drive.google.com/uc?export=view&id=1CAQFb-F0Vz3CstM8LQI2UvvERg3_nxg_') 55 round;
+}

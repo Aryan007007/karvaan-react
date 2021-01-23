@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TEAM_DATA from '../../store/store';
+import TEAM_DATA from '../../store/teamData';
 
 import '../team/team.styles.scss';
 

@@ -16,10 +16,10 @@ class NavBar extends React.Component {
 
     handleClick() {
         var x = document.getElementById("myNav");
-        if (x.className === "mainNav") {
+        if (x.className === `mainNav ${this.props.accent}`) {
             x.className += " responsive";
         } else {
-            x.className = "mainNav";
+            x.className = `mainNav ${this.props.accent}`;
         }
     }
 

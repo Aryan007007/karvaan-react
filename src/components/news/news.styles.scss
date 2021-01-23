@@ -2,6 +2,11 @@
     background-color: blanchedalmond;
     padding-top: 10px;
     overflow: hidden;
+
+    img{
+        border-radius: 5px;
+        max-width: 100%;
+    }
 }
 
 .news-heading{
@@ -53,11 +58,6 @@
 
 .read-more{
     cursor: pointer;
-}
-
-img{
-    border-radius: 5px;
-    max-width: 100%;
 }
 
 @media screen and (max-width: 500px){

@@ -8,6 +8,7 @@
 
 .mainNav {
     position: fixed;
+    top: 0;
     width: 100vw;
 
     background: var(--nav1);
@@ -62,6 +63,10 @@
     border-radius: 0 0 20% 20%;
 }
 
+.purple{
+    background-color: var(--navBrown);
+}
+
 @media screen and (max-width: 500px){
     
     .mainNav{
@@ -101,7 +106,7 @@
             }
         }
         a{  
-            &:not(:first-child){
+            &:not(:nth-child(1)){
                 align-self: center;;
                 display: none;
             }  

@@ -5,7 +5,7 @@ import '../shows-showcase/shows-showcase.styles.scss';
 class Showcase extends React.Component {
 
     render() {
-        const { imgUrl1, imgUrl2, imgUrl3, heading } = this.props;
+        const { imgUrl1, imgUrl2, imgUrl3, heading, description } = this.props;
         return (
             <div className="showcase">
                 <div className="limit">
@@ -23,10 +23,7 @@ class Showcase extends React.Component {
 
                     <div className="show-text">
                         <h2>{heading}</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi officiis accusamus ex sunt dolores
-                        nobis inventore quos explicabo ducimus hic id, iusto itaque architecto doloribus placeat ullam. Molestiae,
-                        fugiat.
-                        </p>
+                        <p>{description}</p>
                     </div>
                 </div>
 

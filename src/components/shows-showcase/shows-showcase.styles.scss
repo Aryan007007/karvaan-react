@@ -79,5 +79,47 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+@media screen and (max-width: 500px){
+    .showcase{
+      &:first-child{
+        margin-top: -5vh;
+        padding-top: 5vh;
+    }
+  }
+    
+    .limit{
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .show-text{
+        order: 1;
+      }
+      .show-img{
+        order:2;
+      }
+      .one, .one img{
+        border-radius: 10px;
+      }
+      .extra{
+        display: inline-block;
+        justify-self: center;
+      }
+      .extra:not(:first-child){
+        margin-left: 40px;
+      }
+      .active{
+        margin: 0 20px;
+        display: block;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        transition: max-height 0.5s ease-out;
+  
+      }
+      .two:hover{
+        font-size: 1em;
+      }
+}
   
 

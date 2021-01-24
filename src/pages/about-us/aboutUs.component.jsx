@@ -8,7 +8,7 @@ import Footer from '../../components/footer/footer.component';
 import '../about-us/aboutUs.styles.scss';
 
 const AboutUsPage = () => (
-    <div>
+    <div className='bgBlue'>
         <NavBar accent={'blue'} />
         <div className="wrapper">
             <AboutText />

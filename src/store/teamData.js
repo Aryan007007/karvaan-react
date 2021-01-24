@@ -9,20 +9,22 @@ const TEAM_DATA = {
         social_insta: 'https://www.instagram.com/gauravpandey09/',
         social_fb: '',
         social_tw: '',
-        social_yt: ''
+        social_yt: '',
+        email: 'mailto:'
     },
 
     Simran: {
         name: 'Simran',
         imageUrl: 'https://drive.google.com/uc?export=view&id=13To5QoRg1qMZ2SsubXLd5szysEQFoqea',
         title: 'Head Event Planner',
-        feature_1: '',
+        feature_1: 'Some Text',
         attribute_1: '',
-        feature_2: '',
+        feature_2: 'Some Text',
         social_insta: 'https://www.instagram.com/simranmohanty1/',
         social_fb: '',
         social_tw: '',
-        social_yt: ''
+        social_yt: '',
+        email: 'mailto:'
     },
 
     Arpan: {
@@ -35,20 +37,22 @@ const TEAM_DATA = {
         social_insta: 'https://www.instagram.com/rick_cr2/',
         social_fb: '',
         social_tw: '',
-        social_yt: ''
+        social_yt: '',
+        email: 'mailto:'
     },
 
     Avik: {
         name: 'Avik',
         imageUrl: 'https://drive.google.com/uc?export=view&id=1QCbx1JsTsr0322v03OUN9tTaW2_0Z54S',
         title: 'Team Manager',
-        feature_1: '',
+        feature_1: 'Some Text',
         attribute_1: '',
-        feature_2: '',
+        feature_2: 'Some Text',
         social_insta: '',
         social_fb: '',
         social_tw: '',
-        social_yt: ''
+        social_yt: '',
+        email: 'mailto:'
     },
 
     Manawar: {
@@ -61,20 +65,22 @@ const TEAM_DATA = {
         social_insta: 'https://www.instagram.com/manu_sakir014/',
         social_fb: '',
         social_tw: '',
-        social_yt: 'https://l.instagram.com/?u=https%3A%2F%2Fyoutu.be%2Fr36NkElnJsM&e=ATNVkisYMfsZ2tsajeBO-hJcRePsDOKzheQRKLQ_NxIdCutiUqnw_1Y4b2K4y0otx0iKvwhqkrgNf8un&s=1'
+        social_yt: 'https://l.instagram.com/?u=https%3A%2F%2Fyoutu.be%2Fr36NkElnJsM&e=ATNVkisYMfsZ2tsajeBO-hJcRePsDOKzheQRKLQ_NxIdCutiUqnw_1Y4b2K4y0otx0iKvwhqkrgNf8un&s=1',
+        email: 'mailto:'
     },
 
     Ankankshya: {
         name: 'Ankankshya Samal',
         imageUrl: 'https://drive.google.com/uc?export=view&id=1JcoUmFQ7u3r8b0spSwulmMKbNYy3g_-0',
         title: 'Lead Graphic Designer',
-        feature_1: '',
+        feature_1: 'Some Text',
         attribute_1: '',
-        feature_2: '',
+        feature_2: 'Some Text',
         social_insta: '',
         social_fb: '',
         social_tw: '',
-        social_yt: ''
+        social_yt: '',
+        email: 'mailto:'
     },
 
     Aryan: {

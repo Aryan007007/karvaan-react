@@ -6,15 +6,21 @@
   }
 
 .about-section {
-    margin-top: 15vh;
+    margin-top: 10vh;
     color: #8B6426;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', cursive;
 
     p{
         margin-top: 1rem; 
         padding: 0; 
         text-transform: capitalize;
+    }
+    
+    a{
+      text-decoration: none;
+      color: #8B6426;
     }
   }
 

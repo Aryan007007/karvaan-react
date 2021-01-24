@@ -7,7 +7,7 @@ import Footer from '../../components/footer/footer.component';
 
 
 const HomePage = () => (
-    <div>
+    <div className='bgMaroon'>
         <Header />
         <Social />
         <News />

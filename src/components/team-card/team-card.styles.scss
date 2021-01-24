@@ -1,0 +1,71 @@
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 40px 80px 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+  
+    img{
+      width:100%;
+      box-shadow: none;
+    }
+
+    .container{
+        background-color: white;
+        padding: 0 16px;
+        text-align: center;
+      
+        h2, h3, a, p{
+          margin-top: 10px;
+        }
+      
+        .title {
+          color: grey;
+        }
+      
+        a{
+          text-decoration: none;
+          color: #0d152e;
+          font-weight: bold;
+        
+          &:hover{
+            color: #006379;
+          }
+        }
+
+        .team-social{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+          
+            a{
+              margin: 0 15px
+            }
+          }
+          
+          .button {
+            border: none;
+            border-radius: 5px;
+            outline: 0;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 0;
+            
+            background-color: #0d152e;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        
+            a{
+                color: white;
+                font-weight: normal;
+            }
+          }
+      }  
+  }
+
+
+  
+  

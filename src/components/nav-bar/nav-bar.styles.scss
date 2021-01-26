@@ -42,6 +42,14 @@
             padding: 0;
             text-decoration: none;
             color: white;
+
+            &:hover{
+                color: burlywood;    
+            }
+
+            .active {
+                
+            }
         }
 
         .icon{
@@ -53,10 +61,54 @@
 .blue{
     background-color: var(--navBlue);
     border-radius: 0 0 20% 20%;
+
+    .brick{
+        a{
+            &:nth-child(2){
+                color: burlywood;
+                text-decoration: underline;
+                text-underline-offset: 18px;
+            }
+        }
+    }
 }
 
 .purple{
     background-color: var(--navBrown);
+    .brick{
+        a{
+            &:nth-child(5){
+                color: burlywood;
+                text-decoration: underline;
+                text-underline-offset: 18px;
+            }
+        }
+    }
+}
+
+.maroon{
+    .brick{
+        a{
+            &:nth-child(1){
+                color: burlywood;
+                text-decoration: underline;
+                text-underline-offset: 18px;
+            }
+        }
+    }
+}
+
+.green{
+    background-color: var(--navGreen);
+    .brick{
+        a{
+            &:nth-child(6){
+                color: burlywood;
+                text-decoration: underline;
+                text-underline-offset: 18px;
+            }
+        }
+    } 
 }
 
 @media screen and (max-width: 500px){

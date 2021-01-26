@@ -7,7 +7,7 @@ import Footer from '../../components/footer/footer.component'
 
 const ContactUsPage = () => (
     <div>
-        <NavBar />
+        <NavBar accent='green' />
         <ContactUsForm />
         <ContactSocial />
         <Footer />

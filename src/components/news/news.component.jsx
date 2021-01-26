@@ -26,7 +26,7 @@ class News extends React.Component {
 
     render() {
         return (
-            <section className="container">
+            <div className="container">
                 <div className="news-heading">
                     <h1>News</h1>
                 </div>
@@ -49,7 +49,7 @@ class News extends React.Component {
                         <div onClick={() => this.handleClick(2)} className="read-more">Read More</div>
                     </div>
                 </div>
-            </section>
+            </div>
         )
     }
 }

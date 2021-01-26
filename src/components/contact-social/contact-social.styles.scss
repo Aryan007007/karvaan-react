@@ -1,0 +1,103 @@
+.social-showcase{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+section{
+    position: relative;
+    padding: 10px;
+         
+    img{
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .follow-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: xx-large;
+            justify-self: center;
+            margin-top: 5px; 
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;   
+    }
+      
+}
+.insta{
+    background-image: url('https://drive.google.com/uc?export=view&id=1xSB9kXKmivNWi4tr9ozwFup1a7_59iWj');
+    background-size: cover;
+}
+
+.fb{
+    background-image: url('https://drive.google.com/uc?export=view&id=1hVnYPoCTkr3UlyvZI4hCQ-H0AYxKLc7R');
+    background-size: cover;  
+}
+
+.yt{
+    background-image: url('https://drive.google.com/uc?export=view&id=1EZTb-kq3Gg7z2obq43Oqvwmkt5vbGcjd');
+    background-size: cover;
+}
+
+@media screen and (min-width:600px){
+    section{
+        &:hover {
+            .overlay{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+
+    section{
+        .follow-text{ 
+            text-align: center;
+        }
+
+        &:hover{
+            .overlay {
+                width: 100%;
+                opacity: 1;
+                transition: .5s ease;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            object-position: left; 
+        }
+
+        .follow-text{
+            a{
+                font-size: x-large;
+            }
+        }
+    }
+}
+
+
+

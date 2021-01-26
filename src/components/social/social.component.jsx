@@ -3,7 +3,7 @@ import React from 'react';
 import '../social/social.styles.scss';
 
 const Social = () => (
-    <section className="social">
+    <div className="social">
         <div className="social-txt">
             <p>Reach out to us on our Social Media outlets</p>
         </div>
@@ -14,7 +14,7 @@ const Social = () => (
             <a href="https://www.youtube.com/channel/UCpJS1Wp5pR1toVgsUokkfzg/featured"><i
                 className="fa fa-youtube"></i></a>
         </div>
-    </section>
+    </div>
 )
 
 export default Social;

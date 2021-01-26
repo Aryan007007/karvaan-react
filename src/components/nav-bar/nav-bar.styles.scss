@@ -1,11 +1,3 @@
-// :root {
-//     --primary: #000000;
-//     --nav1: #5f0201;
-//     --secondary: #fff8dc;
-//     --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
-//     --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4);
-// }
-
 .mainNav {
     position: fixed;
     top: 0;
@@ -14,7 +6,7 @@
     background: var(--nav1);
     text-align: center;
     font-family: samarkannormal;
-    font-size: 1.8em;
+    font-size: 1.6em;
 
     padding: 1.5vh 2vh;
     margin: 0;

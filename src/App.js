@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import withSplashScreen from './components/withSplashScreen';
+
 import HomePage from './pages/home/homePage.component';
 
 import './App.css';
@@ -20,4 +22,4 @@ const App = () => {
 }
 
 
-export default App;
+export default withSplashScreen(App);

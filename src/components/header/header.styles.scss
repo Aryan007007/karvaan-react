@@ -1,7 +1,8 @@
 .header{
     height: 100vh;
 
-    background-image: url('https://drive.google.com/uc?export=view&id=1c3Z-HmXdWlmNkEh7POfrUCJWbtfY9F2Y');
+    // background-image: url('https://drive.google.com/uc?export=view&id=1c3Z-HmXdWlmNkEh7POfrUCJWbtfY9F2Y');
+    background-image: url('../../assets/images/background/bg_header_web.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -12,7 +13,8 @@
 @media screen and (max-width: 500px){
     .header{
         height: 80vh;
-        background-image: url('https://drive.google.com/uc?export=view&id=1Ou91rK9PJFHCiaQchzD1oLiji06td4QF');
+        // background-image: url('https://drive.google.com/uc?export=view&id=1Ou91rK9PJFHCiaQchzD1oLiji06td4QF');
+        background-image: url('../../assets//images/background/bg_header_mobile.png');
         background-size: cover;
     }
 }

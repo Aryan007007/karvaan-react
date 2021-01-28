@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/images/logo-with-triangle.png';
-import logo_2 from '../../assets/images/logo.png';
+import { ReactComponent as Logo_2 } from '../../assets/images/logo_mobile.svg';
 
 import './nav-bar.styles.scss';
 
@@ -31,7 +31,7 @@ class NavBar extends React.Component {
                 <div className="brick">
                     <Link to='/'>Home</Link>
                     <Link to='/about-us'>About Us </Link>
-                    <div className='logo-2'><img src={logo_2} alt="logo_2" /></div>
+                    <div className='logo-2'><Logo_2 /></div>
                     <div className='logo'><img src={logo} alt="Logo" /></div>
                     <Link to='shows'>Shows</Link>
                     <Link to='contact-us'>Contact Us</Link>

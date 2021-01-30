@@ -1,57 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import firebase from '../../firestore';
 
 import '../news/news.styles.scss';
 
-class News extends React.Component {
-    constructor(props) {
-        super(props);
+function News() {
+    const [news, setNewsCards] = useState([]);
 
-        this.handleClick = this.handleClick.bind(this);
+    const ref = firebase.firestore().collection('news');
 
+    function getNews() {
+        ref.onSnapshot((querySnapshot) => {
+            const items = [];
+            querySnapshot.forEach((doc) => { items.push(doc.data()) })
+
+            setNewsCards(items)
+        })
     }
 
-    handleClick(i) {
-        var btn = document.getElementsByClassName('read-more');
+    useEffect(() => {
+        getNews();
+    });
 
-        if (btn[i].parentElement.className === 'card-n') {
-            btn[i].parentElement.className = 'expanded';
-            btn[i].innerHTML = "&times;"
+    // function handleClick(i) {
+    //     var btn = document.getElementsByClassName('read-more');
 
-        }
-        else {
-            btn[i].parentElement.className = 'card-n';
-            btn[i].innerHTML = 'Read More';
-        }
-    }
+    //     if (btn[i].parentElement.className === 'card-n') {
+    //         btn[i].parentElement.className = 'expanded';
+    //         btn[i].innerHTML = "&times;"
 
-    render() {
-        return (
-            <div className="container">
-                <div className="news-heading">
-                    <h1>News</h1>
-                </div>
-                <div className="news-tab">
-                    <div className="card-n">
-                        <img src="https://drive.google.com/uc?export=view&id=1xYD5LHLY80c9cCNN3x2emy3CZNN0abF5" alt="" />
-                        <h3>News Heading</h3>
-                        <div onClick={() => this.handleClick(0)} className="read-more">Read More</div>
-                    </div>
+    //     }
+    //     else {
+    //         btn[i].parentElement.className = 'card-n';
+    //         btn[i].innerHTML = 'Read More';
+    //     }
 
-                    <div className="card-n">
-                        <img src="https://drive.google.com/uc?export=view&id=1vLxGawdxRcjfhlXa6PFHADpgBHq7KULS" alt="" />
-                        <h3>News Heading</h3>
-                        <div onClick={() => this.handleClick(1)} className="read-more">Read More</div>
-                    </div>
-
-                    <div className="card-n">
-                        <img src="https://drive.google.com/uc?export=view&id=1l9l_GLlc48qKJxKE02JHo-IVrhEPbmfe" alt="" />
-                        <h3>News Heading</h3>
-                        <div onClick={() => this.handleClick(2)} className="read-more">Read More</div>
-                    </div>
-                </div>
+    return (
+        <div className="container">
+            <div className="news-heading">
+                <h1>News</h1>
             </div>
-        )
-    }
+            <div className="news-tab">
+                {news.map((article) => (
+                    <div className="card-n">
+                        <img src={article.imgUrl} alt='news' />
+                        <h3>{article.heading}</h3>
+                        <p>{article.content}</p>
+                    </div>
+                ))
+                }
+
+                {/* <div onClick={handleClick(0)} className="read-more">Read More</div> */}
+            </div>
+        </div>
+    )
 }
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../footer/footer.styles.scss';
 
@@ -14,6 +15,20 @@ const Footer = () => (
         </div>
         <br />
         <p>Contact<br />Gaurav : 8457057497</p>
+        <br />
+        <p>Useful Links -</p>
+        <br />
+        <p>
+            <Link to='/cms'>
+                Content Management
+            </Link>
+        </p>
+        <div className='navLinks'>
+            <Link to='/'>Home</Link>
+            <Link to='/about-us'>About-Us</Link>
+            <Link to='/shows'>Shows</Link>
+            <Link to='/contact-us'>Contact-Us</Link>
+        </div>
 
 
     </footer>

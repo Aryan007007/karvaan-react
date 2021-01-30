@@ -1,0 +1,12 @@
+.input-form{
+    padding: 100px 0 0 0;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button{
+    width: 300px;
+    margin: 0 auto 10px auto;
+}

@@ -6,6 +6,7 @@ class Showcase extends React.Component {
 
     render() {
         const { imgUrl1, imgUrl2, imgUrl3, heading, description } = this.props;
+
         return (
             <div className="showcase">
                 <div className="limit">

@@ -5,7 +5,7 @@
 
     img{
         border-radius: 5px;
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -37,6 +37,12 @@
     transition: width 1s;
     width: 27%;
     border-radius: 5px;
+
+    p{
+        line-height: 1em;
+        word-wrap: break-word;
+        margin: 15px;
+    }
 }
 
 .expanded{

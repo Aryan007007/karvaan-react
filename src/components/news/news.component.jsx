@@ -23,17 +23,18 @@ function News() {
     });
 
     // function handleClick(i) {
-    //     var btn = document.getElementsByClassName('read-more');
+    // var btn = document.getElementsByClassName('read-more');
+    // console.log(btn)
+    // if (btn[i].parentElement.className === 'card-n') {
+    //     btn[i].parentElement.className = 'expanded';
+    //     btn[i].innerHTML = "&times;"
 
-    //     if (btn[i].parentElement.className === 'card-n') {
-    //         btn[i].parentElement.className = 'expanded';
-    //         btn[i].innerHTML = "&times;"
-
-    //     }
-    //     else {
-    //         btn[i].parentElement.className = 'card-n';
-    //         btn[i].innerHTML = 'Read More';
-    //     }
+    // }
+    // else {
+    //     btn[i].parentElement.className = 'card-n';
+    //     btn[i].innerHTML = 'Read More';
+    // }
+    // }
 
     return (
         <div className="container">
@@ -43,14 +44,12 @@ function News() {
             <div className="news-tab">
                 {news.map((article) => (
                     <div className="card-n">
-                        <img src={article.imgUrl} alt='news' />
+                        <img src={article.fileUrl} alt='news' />
                         <h3>{article.heading}</h3>
                         <p>{article.content}</p>
                     </div>
                 ))
                 }
-
-                {/* <div onClick={handleClick(0)} className="read-more">Read More</div> */}
             </div>
         </div>
     )

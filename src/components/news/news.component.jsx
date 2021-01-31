@@ -43,7 +43,7 @@ function News() {
             </div>
             <div className="news-tab">
                 {news.map((article) => (
-                    <div className="card-n">
+                    <div key={article.heading} className="card-n">
                         <img src={article.fileUrl} alt='news' />
                         <h3>{article.heading}</h3>
                         <p>{article.content}</p>

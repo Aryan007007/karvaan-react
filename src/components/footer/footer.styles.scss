@@ -6,12 +6,12 @@ footer{
     background-color: black;
 
     a{
-        text-decoration: none;
         color: white;
     }
 
     .navLinks{
-        margin-top: 20px;
+        width: 80%;
+        margin: 40px auto 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1.1fr;
     }

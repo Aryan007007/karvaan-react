@@ -14,8 +14,7 @@ const ContentManager = () => {
     const ref = firebase.firestore().collection("news");
 
     // ADD FUNCTION
-    function addNews(newArticle, e) {
-        e.preventDefault()
+    function addNews(newArticle) {
         ref.doc(newArticle.id).set(newArticle).catch((err) => {
             console.error(err);
         });
@@ -23,8 +22,6 @@ const ContentManager = () => {
         document.getElementById('content').value = '';
         document.getElementById('image').value = '';
         setTimeout(() => alert('Your input has been saved'), 500)
-
-
     }
 
     const onFileChange = async (e) => {
@@ -42,7 +39,7 @@ const ContentManager = () => {
 
                 <p>This part of the application allows the core team to update the news on the homepage without having to edit any code</p>
 
-                <form>
+                <div className="border">
                     <label>image in 1:1 ratio</label>
                     <input
                         id='image'
@@ -66,8 +63,8 @@ const ContentManager = () => {
 
                     <button id='submit' onClick={() => addNews({ fileUrl, heading, content, id: uuidv4() })}>
                         Update
-                </button>
-                </form>
+                    </button>
+                </div>
             </div>
             <Footer />
         </div>

@@ -29,6 +29,9 @@ const Footer = () => (
             <Link to='/shows'>Shows</Link>
             <Link to='/contact-us'>Contact-Us</Link>
         </div>
+        <br />
+        <br />
+        <p><Link to='/book-tickets'>Book Now</Link></p>
 
 
     </footer>

@@ -87,7 +87,7 @@ const TEAM_DATA = {
         name: 'Aryan Asthana',
         imageUrl: 'https://drive.google.com/uc?export=view&id=1lI0Tq_Cl9hCyfwTJ1IZCu41JQcqOmrPo',
         title: 'Web Designer and Developer',
-        feature_1: 'Musician Graphic Designer',
+        feature_1: 'Musician & Graphic Designer',
         feature_2: 'Senior Photo Editor at ',
         attribute_2: 'https://www.instagram.com/pankhography/',
         social_insta: 'https://www.instagram.com/i_have_been_aryan/',

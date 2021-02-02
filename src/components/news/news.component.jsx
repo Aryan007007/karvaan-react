@@ -2,10 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import firebase from '../../firestore';
 
+import LoadingMessage from '../withSplashScreen';
+
 import '../news/news.styles.scss';
 
 function News() {
     const [news, setNewsCards] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const ref = firebase.firestore().collection('news');
 
@@ -14,7 +17,8 @@ function News() {
             const items = [];
             querySnapshot.forEach((doc) => { items.push(doc.data()) })
 
-            setNewsCards(items)
+            setNewsCards(items);
+            setLoading(false);
         })
     }
 
@@ -22,19 +26,17 @@ function News() {
         getNews();
     });
 
-    // function handleClick(i) {
-    // var btn = document.getElementsByClassName('read-more');
-    // console.log(btn)
-    // if (btn[i].parentElement.className === 'card-n') {
-    //     btn[i].parentElement.className = 'expanded';
-    //     btn[i].innerHTML = "&times;"
+    if (loading) {
+        return <LoadingMessage />
+    }
 
-    // }
-    // else {
-    //     btn[i].parentElement.className = 'card-n';
-    //     btn[i].innerHTML = 'Read More';
-    // }
-    // }
+    // function handleClick(i)
+    //     var btn = document.getElementsById(`${.heading}`);
+    //     for (i = 0; i < btn.length; i++) {
+    //         btn[i].addEventListener("click", function () {
+    //             this.parentElement.classList.toggle('exapanded');
+    //         })
+    //     }
 
     return (
         <div className="container">
@@ -47,12 +49,16 @@ function News() {
                         <img src={article.fileUrl} alt='news' />
                         <h3>{article.heading}</h3>
                         <p>{article.content}</p>
+                        <div>Read More</div>
                     </div>
                 ))
                 }
             </div>
         </div>
     )
+
+
+
 }
 
 

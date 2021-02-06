@@ -10,7 +10,10 @@ import ContactUsPage from './pages/contact-us/contactUs.component';
 import ContentManagement from './components/content-management/content-management.component';
 import BookNow from './pages/book-ticket/book-ticket.component';
 
+
+
 const App = () => {
+
   return (
     <Switch>
       <Route exact path='/' component={HomePage} />

@@ -38,22 +38,28 @@ function News() {
     //         })
     //     }
 
+    function returnCard(article) {
+        return (
+            <div key={article.heading} className="card-n">
+                <img src={article.fileUrl} alt='news' />
+                <h3>{article.heading}</h3>
+                <p>{article.content}</p>
+                <div>Read More</div>
+            </div>
+        )
+    }
+
     return (
         <div className="container">
             <div className="news-heading">
                 <h1>News</h1>
             </div>
             <div className="news-tab">
-                {news.map((article) => (
-                    <div key={article.heading} className="card-n">
-                        <img src={article.fileUrl} alt='news' />
-                        <h3>{article.heading}</h3>
-                        <p>{article.content}</p>
-                        <div>Read More</div>
-                    </div>
-                ))
-                }
+                {news.map(returnCard)}
             </div>
+            {/* {(function () {
+                console.log(Element.getElementsByClassName('card-n'))
+            }())} */}
         </div>
     )
 
